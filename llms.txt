@@ -9,6 +9,7 @@ Status: live. Buy via Gumroad (USD). Site: https://botdrop-gg.github.io/ · X: h
 
 ## Templates (USD)
 - Discord Gaming Community Kit ($25): One self-hosted Discord bot for gaming servers: auto-moderation, free games, Steam deals, patch notes, player counts and what-to-play, with slash commands and scheduled posts. Page: https://botdrop-gg.github.io/discord-gaming-community-kit/ · Buy: https://gklab.gumroad.com/l/kdjlp Beta: live Discord behaviour not yet tested.
+- Stream Alert Bot ($12): Post to Discord when a YouTube channel uploads or a Twitch channel goes live, once per video and once per stream. Page: https://botdrop-gg.github.io/stream-alert-bot/ ·  Coming soon. Needs a free Twitch app for Twitch alerts. Beta: Twitch API path and live Discord posting not yet live-tested.
 - Steam Review Verdict ($19): A Steam review-data API and widget for your own site or Discord: turn hundreds of reviews into a YES / WAIT / NO verdict with themes and trend. Page: https://botdrop-gg.github.io/steam-review-verdict/ · Buy: https://gklab.gumroad.com/l/vyhqgz Beta: Ollama/LLM AI mode not live-tested.
 - Wishlist Deal Alert ($9): Set target prices or load a public wishlist, and get pinged when games drop to your price. Page: https://botdrop-gg.github.io/wishlist-deal-alert/ · Buy: https://gklab.gumroad.com/l/akzemz
 - GitHub Repo Health ($6): Score any public repo from 0 to 100 with a fix tip for every gap, plus a JSON API and a live SVG badge. Page: https://botdrop-gg.github.io/github-repo-health/ · Buy: https://gklab.gumroad.com/l/rplfoc
