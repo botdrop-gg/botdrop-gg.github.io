@@ -2,21 +2,23 @@
 
 > BotDrop sells ready-to-run Python bot and agent templates for gamers, Discord communities, and vibe coders. Each template is tested, sets up in under 10 minutes, needs no paid API keys (the Discord bot needs a free bot token; the Verdict bot's optional LLM mode is beta and uses your own xAI, OpenAI, or Anthropic key), and ships with deploy configs (Docker tested; Render and Railway configs included).
 
-Status: pre-launch, templates not on sale yet (coming soon). Site: https://botdrop-gg.github.io/ (botdrop.gg planned as a future custom domain).
+Status: live. Buy via Gumroad (prices in USD). Site: https://botdrop-gg.github.io/ (botdrop.gg planned as a future custom domain). X: https://x.com/getbotdrop
 
 ## Templates (USD)
-- Steam Review Verdict ($19): turns hundreds of Steam reviews into a YES/WAIT/NO buying verdict with loves, complaints, and trend. CLI + web app + JSON API.
-- Steam Wishlist Deal Alert ($9): target-price and discount alerts for app ids or a public Steam wishlist; console + Discord webhook.
-- GitHub Repo Health Checker ($9): 0–100 score for README, license, tests, CI, activity, issues, and polish, with fix tips; JSON API and SVG badge.
-- Discord Moderation Bot ($15): discord.py bot with spam/link/caps/banned-word filters, strikes and timeouts, welcome messages, YAML FAQ, and slash commands.
-- Free Games Radar ($9): currently free-to-keep games on Epic and Steam (GOG is checked too), plus Epic's upcoming freebies; deduped Discord alerts.
-- Player Count Tracker ($12): Steam concurrent-player history in SQLite with an ALIVE/NICHE/DEAD/GROWING/DYING verdict.
-- Patch Tracker ($12): watches official Steam announcements, flags MAJOR updates vs. patches, deduped alerts.
-- What to Play Tonight ($9): 3 owned, barely-played, well-reviewed games; manual list, or library import with a free Steam Web API key (beta).
-- BotDrop Bundle ($49): all 8 templates .
+- Steam Review Verdict ($19): turns hundreds of Steam reviews into a YES/WAIT/NO buying verdict with loves, complaints, and trend. CLI + web app + JSON API. Buy: https://gklab.gumroad.com/l/vyhqgz
+- Steam Wishlist Deal Alert ($9): target-price and discount alerts for app ids or a public Steam wishlist; console + Discord webhook. Buy: https://gklab.gumroad.com/l/akzemz
+- GitHub Repo Health Checker ($9): 0–100 score for README, license, tests, CI, activity, issues, and polish, with fix tips; JSON API and SVG badge. Buy: https://gklab.gumroad.com/l/rplfoc
+- Discord Moderation Bot ($15): discord.py bot with spam/link/caps/banned-word filters, strikes and timeouts, welcome messages, YAML FAQ, and slash commands. Buy: https://gklab.gumroad.com/l/sppcrr
+- Free Games Radar ($9): currently free-to-keep games on Epic and Steam (GOG is checked too), plus Epic's upcoming freebies; deduped Discord alerts. Buy: https://gklab.gumroad.com/l/qafrrm
+- Player Count Tracker ($12): Steam concurrent-player history in SQLite with an ALIVE/NICHE/DEAD/GROWING/DYING verdict. Buy: https://gklab.gumroad.com/l/kmqtn
+- Patch Tracker ($12): watches official Steam announcements, flags MAJOR updates vs. patches, deduped alerts. Buy: https://gklab.gumroad.com/l/szohwi
+- What to Play Tonight ($9): 3 owned, barely-played, well-reviewed games; manual list, or library import with a free Steam Web API key (beta). Buy: https://gklab.gumroad.com/l/pzllw
+- BotDrop Bundle ($49): all 8 templates. Buy: https://gklab.gumroad.com/l/gtnidl
 
 ## License
 Simple commercial license: unlimited personal and client use; reselling or redistributing the source is not allowed.
 
 ## Links
 - Store: https://botdrop-gg.github.io/ (future custom domain: botdrop.gg)
+- Gumroad: https://gklab.gumroad.com/
+- X: https://x.com/getbotdrop
