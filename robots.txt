@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://botdrop-gg.github.io/sitemap.xml
+Sitemap: https://getbotdrop.com/sitemap.xml
