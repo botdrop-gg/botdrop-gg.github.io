@@ -31,3 +31,6 @@ Commercial license: use, modify and rebrand for unlimited own and client project
 - Q: What is tested? A: Every product has unit tests and its data fetchers were run against the real public APIs. Every Docker image was built and run. Anything not live-tested, like behaviour inside a real Discord server or the AI rewrite, is labelled beta.
 - Q: What's in the bundle? A: All 9 products, including the new Discord Gaming Community Kit, for a $29 launch price (regular $49).
 - Q: What if it doesn't work for me? A: 30-day money-back guarantee, no questions asked. Request a refund through Gumroad.
+
+## Privacy
+Cookieless Cloudflare Web Analytics (aggregate counts only); newsletter via Kit (email only, one-click unsubscribe); checkout via Gumroad. Details: https://botdrop-gg.github.io/privacy/
