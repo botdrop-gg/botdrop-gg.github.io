@@ -1,27 +1,33 @@
 # BotDrop
 
-> BotDrop sells ready-to-run Python bot and agent templates for gamers, Discord communities, and vibe coders. Each template is tested, sets up in under 10 minutes, needs no paid API keys (the Discord bot needs a free bot token; the Verdict bot's optional LLM mode is beta and uses your own xAI, OpenAI, or Anthropic key), and ships with deploy configs (Docker tested; Render and Railway configs included).
+> BotDrop sells self-hosted Discord and Steam bot templates as Python source code you own, rebrand and ship. Each is unit-tested, its data fetchers are live-tested against real public APIs, it needs no paid API keys (Discord bots need a free bot token), and it ships with a Dockerfile (built and run in QA) plus Render/Railway/Procfile configs. Untested parts are labelled beta.
 
-Status: live. Buy via Gumroad (prices in USD). Site: https://botdrop-gg.github.io/ (botdrop.gg planned as a future custom domain). X: https://x.com/getbotdrop
+Status: live. Buy via Gumroad (USD). Site: https://botdrop-gg.github.io/ · X: https://x.com/getbotdrop · Free MIT notifier: https://github.com/botdrop-gg/free-games-notifier-lite
+
+## Bundle
+- BotDrop Bundle: all 9 templates incl. the Community Kit. $29 launch price (regular $49). Buy: https://gklab.gumroad.com/l/gtnidl
 
 ## Templates (USD)
-- Steam Review Verdict ($19): turns hundreds of Steam reviews into a YES/WAIT/NO buying verdict with loves, complaints, and trend. CLI + web app + JSON API. Buy: https://gklab.gumroad.com/l/vyhqgz
-- Steam Wishlist Deal Alert ($9): target-price and discount alerts for app ids or a public Steam wishlist; console + Discord webhook. Buy: https://gklab.gumroad.com/l/akzemz
-- GitHub Repo Health Checker ($9): 0–100 score for README, license, tests, CI, activity, issues, and polish, with fix tips; JSON API and SVG badge. Buy: https://gklab.gumroad.com/l/rplfoc
-- Discord Moderation Bot ($15): discord.py bot with spam/link/caps/banned-word filters, strikes and timeouts, welcome messages, YAML FAQ, and slash commands. Buy: https://gklab.gumroad.com/l/sppcrr
-- Free Games Radar ($9): currently free-to-keep games on Epic and Steam (GOG is checked too), plus Epic's upcoming freebies; deduped Discord alerts. Buy: https://gklab.gumroad.com/l/qafrrm
-- Player Count Tracker ($12): Steam concurrent-player history in SQLite with an ALIVE/NICHE/DEAD/GROWING/DYING verdict. Buy: https://gklab.gumroad.com/l/kmqtn
-- Patch Tracker ($12): watches official Steam announcements, flags MAJOR updates vs. patches, deduped alerts. Buy: https://gklab.gumroad.com/l/szohwi
-- What to Play Tonight ($9): 3 owned, barely-played, well-reviewed games; manual list, or library import with a free Steam Web API key (beta). Buy: https://gklab.gumroad.com/l/pzllw
-- BotDrop Bundle ($49): all 8 templates. Buy: https://gklab.gumroad.com/l/gtnidl
+- Discord Gaming Community Kit ($25): One self-hosted Discord bot for gaming servers: auto-moderation, free games, Steam deals, patch notes, player counts and what-to-play, with slash commands and scheduled posts. Page: https://botdrop-gg.github.io/discord-gaming-community-kit/ · Coming soon to Gumroad (in the bundle now) Beta: live Discord behaviour not yet tested.
+- Steam Review Verdict ($19): A Steam review-data API and widget for your own site or Discord: turn hundreds of reviews into a YES / WAIT / NO verdict with themes and trend. Page: https://botdrop-gg.github.io/steam-review-verdict/ · Buy: https://gklab.gumroad.com/l/vyhqgz Beta: Ollama/LLM AI mode not live-tested.
+- Wishlist Deal Alert ($9): Set target prices or load a public wishlist, and get pinged when games drop to your price. Page: https://botdrop-gg.github.io/wishlist-deal-alert/ · Buy: https://gklab.gumroad.com/l/akzemz
+- GitHub Repo Health ($6): Score any public repo from 0 to 100 with a fix tip for every gap, plus a JSON API and a live SVG badge. Page: https://botdrop-gg.github.io/github-repo-health/ · Buy: https://gklab.gumroad.com/l/rplfoc
+- Discord Mod Bot ($15): Auto-mod for small communities: spam, link and caps filters, welcome messages, FAQ and slash commands. Needs a free bot token. Page: https://botdrop-gg.github.io/discord-mod-bot/ · Buy: https://gklab.gumroad.com/l/sppcrr Beta: live Discord behaviour not yet tested.
+- Free Games Radar ($6): Games that are free to keep right now on Epic and Steam (GOG checked too), posted to your Discord. Page: https://botdrop-gg.github.io/free-games-radar/ · Buy: https://gklab.gumroad.com/l/qafrrm
+- Player Count Tracker ($6): Is that multiplayer game alive or dying? Tracks Steam players over time and gives a verdict. Page: https://botdrop-gg.github.io/player-count-tracker/ · Buy: https://gklab.gumroad.com/l/kmqtn
+- Patch Tracker ($12): Hear about big updates and patch notes for your games without the noise. Page: https://botdrop-gg.github.io/patch-tracker/ · Buy: https://gklab.gumroad.com/l/szohwi
+- What to Play Tonight ($9): 3 games you own but barely played that players love. Beat the backlog. Page: https://botdrop-gg.github.io/what-to-play-tonight/ · Buy: https://gklab.gumroad.com/l/pzllw
 
 ## License
-Simple commercial license: unlimited personal and client use; reselling or redistributing the source is not allowed.
-
-## Links
-- Store: https://botdrop-gg.github.io/ (future custom domain: botdrop.gg)
-- Gumroad: https://gklab.gumroad.com/
-- X: https://x.com/getbotdrop
+Commercial license: use, modify and rebrand for unlimited own and client projects, including bots you run for others. Not allowed: reselling or redistributing the template source as a template, kit or competing product.
 
 ## Refund policy
-30-day money-back guarantee, no questions asked. Request a refund within 30 days of purchase via Gumroad.
+30-day money-back guarantee, no questions asked, via Gumroad.
+
+## FAQ
+- Q: Do I get the full source code? A: Yes. Every BotDrop product is a zip of readable Python source code with tests, a setup guide, a Dockerfile and Render/Railway/Procfile deploy configs. You host it yourself.
+- Q: Can I rebrand it or use it for clients? A: Yes. The commercial license lets you use, modify and rebrand the bots for your own projects and client projects, including bots you run for others. You may not resell or redistribute the template itself as a template or kit.
+- Q: Do I need paid API keys? A: No. The bots use public Steam, Epic and GitHub endpoints. Discord bots need a free Discord bot token. Steam Review Verdict can optionally use a free local Ollama model (beta) or your own LLM key.
+- Q: What is tested? A: Every product has unit tests and its data fetchers were run against the real public APIs. Every Docker image was built and run. Anything not live-tested, like behaviour inside a real Discord server or the AI rewrite, is labelled beta.
+- Q: What's in the bundle? A: All 9 products, including the new Discord Gaming Community Kit, for a $29 launch price (regular $49).
+- Q: What if it doesn't work for me? A: 30-day money-back guarantee, no questions asked. Request a refund through Gumroad.
