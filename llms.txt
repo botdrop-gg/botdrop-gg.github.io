@@ -1,6 +1,6 @@
 # BotDrop
 
-> BotDrop sells ready-to-run Python bot and agent templates for gamers, Discord communities, and vibe coders. Each template is tested, sets up in under 10 minutes, needs no paid API keys (LLM features are optional, bring your own key: xAI, OpenAI, or Anthropic), and ships with one-click deploy files (Docker, Render, Railway).
+> BotDrop sells ready-to-run Python bot and agent templates for gamers, Discord communities, and vibe coders. Each template is tested, sets up in under 10 minutes, needs no paid API keys (the Discord bot needs a free bot token; the Verdict bot's optional LLM mode is beta and uses your own xAI, OpenAI, or Anthropic key), and ships with deploy configs (Docker tested; Render and Railway configs included).
 
 Status: pre-launch, templates not on sale yet (coming soon). Site: https://botdrop-gg.github.io/ (botdrop.gg planned as a future custom domain).
 
@@ -9,10 +9,10 @@ Status: pre-launch, templates not on sale yet (coming soon). Site: https://botdr
 - Steam Wishlist Deal Alert ($9): target-price and discount alerts for app ids or a public Steam wishlist; console + Discord webhook.
 - GitHub Repo Health Checker ($9): 0–100 score for README, license, tests, CI, activity, issues, and polish, with fix tips; JSON API and SVG badge.
 - Discord Moderation Bot ($15): discord.py bot with spam/link/caps/banned-word filters, strikes and timeouts, welcome messages, YAML FAQ, and slash commands.
-- Free Games Radar ($9): currently free-to-keep games on Epic, Steam, and GOG, plus Epic's upcoming freebies; deduped Discord alerts.
+- Free Games Radar ($9): currently free-to-keep games on Epic and Steam (GOG is checked too), plus Epic's upcoming freebies; deduped Discord alerts.
 - Player Count Tracker ($12): Steam concurrent-player history in SQLite with an ALIVE/NICHE/DEAD/GROWING/DYING verdict.
 - Patch Tracker ($12): watches official Steam announcements, flags MAJOR updates vs. patches, deduped alerts.
-- What to Play Tonight ($9): 3 owned, barely-played, well-reviewed games; optional free Steam Web API key or manual list.
+- What to Play Tonight ($9): 3 owned, barely-played, well-reviewed games; manual list, or library import with a free Steam Web API key (beta).
 - BotDrop Bundle ($49): all 8 templates .
 
 ## License
