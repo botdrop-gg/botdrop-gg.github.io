@@ -8,7 +8,7 @@ Status: live. Buy via Gumroad (USD). Site: https://botdrop-gg.github.io/ · X: h
 - BotDrop Bundle: all 9 templates incl. the Community Kit. $29 launch price (regular $49). Buy: https://gklab.gumroad.com/l/gtnidl
 
 ## Templates (USD)
-- Discord Gaming Community Kit ($25): One self-hosted Discord bot for gaming servers: auto-moderation, free games, Steam deals, patch notes, player counts and what-to-play, with slash commands and scheduled posts. Page: https://botdrop-gg.github.io/discord-gaming-community-kit/ · Coming soon to Gumroad (in the bundle now) Beta: live Discord behaviour not yet tested.
+- Discord Gaming Community Kit ($25): One self-hosted Discord bot for gaming servers: auto-moderation, free games, Steam deals, patch notes, player counts and what-to-play, with slash commands and scheduled posts. Page: https://botdrop-gg.github.io/discord-gaming-community-kit/ · Buy: https://gklab.gumroad.com/l/kdjlp Beta: live Discord behaviour not yet tested.
 - Steam Review Verdict ($19): A Steam review-data API and widget for your own site or Discord: turn hundreds of reviews into a YES / WAIT / NO verdict with themes and trend. Page: https://botdrop-gg.github.io/steam-review-verdict/ · Buy: https://gklab.gumroad.com/l/vyhqgz Beta: Ollama/LLM AI mode not live-tested.
 - Wishlist Deal Alert ($9): Set target prices or load a public wishlist, and get pinged when games drop to your price. Page: https://botdrop-gg.github.io/wishlist-deal-alert/ · Buy: https://gklab.gumroad.com/l/akzemz
 - GitHub Repo Health ($6): Score any public repo from 0 to 100 with a fix tip for every gap, plus a JSON API and a live SVG badge. Page: https://botdrop-gg.github.io/github-repo-health/ · Buy: https://gklab.gumroad.com/l/rplfoc
