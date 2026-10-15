@@ -22,3 +22,6 @@ Simple commercial license: unlimited personal and client use; reselling or redis
 - Store: https://botdrop-gg.github.io/ (future custom domain: botdrop.gg)
 - Gumroad: https://gklab.gumroad.com/
 - X: https://x.com/getbotdrop
+
+## Refund policy
+30-day money-back guarantee, no questions asked. Request a refund within 30 days of purchase via Gumroad.
