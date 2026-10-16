@@ -40,4 +40,7 @@ BotDrop is not affiliated with, endorsed by, or sponsored by Valve, Epic Games, 
 - Q: What if it doesn't work for me? A: 30-day refund if the template doesn't work for you. Request it through Gumroad. Details: https://getbotdrop.com/refunds/
 
 ## Privacy
-Cookieless Cloudflare Web Analytics (aggregate counts only); newsletter via Kit (email only, opens/clicks may be measured, one-click unsubscribe); checkout via Gumroad. Contact: hello@getbotdrop.com. Details: https://getbotdrop.com/privacy/ · Terms: https://getbotdrop.com/terms/ · Refunds: https://getbotdrop.com/refunds/
+Cookieless Cloudflare Web Analytics (aggregate counts only); no cookies; checkout via Gumroad. Details: https://getbotdrop.com/privacy/ · Terms: https://getbotdrop.com/terms/ · Refunds: https://getbotdrop.com/refunds/
+
+## Contact
+hello@getbotdrop.com, for pre-sales questions, refunds (via Gumroad), bug reports and custom work. Replies within 1-2 business days. Page: https://getbotdrop.com/contact/
