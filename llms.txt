@@ -18,6 +18,7 @@ Status: live. Buy via Gumroad (USD). Site: https://getbotdrop.com/ · X: https:/
 - Player Count Tracker ($6): Is that multiplayer game alive or dying? Tracks Steam players over time and gives a verdict. Page: https://getbotdrop.com/player-count-tracker/ · Buy: https://gklab.gumroad.com/l/kmqtn
 - Patch Tracker ($12): Hear about big updates and patch notes for your games without the noise. Page: https://getbotdrop.com/patch-tracker/ · Buy: https://gklab.gumroad.com/l/szohwi
 - What to Play Tonight ($9): 3 games you own but barely played that players love. Beat the backlog. Page: https://getbotdrop.com/what-to-play-tonight/ · Buy: https://gklab.gumroad.com/l/pzllw
+- Intel for Steam: Indie Dev Toolkit ($19): Know what your players are saying and what your rivals are doing: Steam review themes, review-bomb alerts to Discord and a daily competitor digest, for a one-time $19. Page: https://getbotdrop.com/steam-indie-dev-intel/ · Buy: https://gklab.gumroad.com/l/rqxutu Sold separately, not in the bundle. Beta: optional AI summary (Ollama/OpenAI-compatible).
 
 ## License
 Commercial license: use, modify and rebrand for unlimited own and client projects, including bots you run for others. Not allowed: reselling or redistributing the template source as a template, kit or competing product.
