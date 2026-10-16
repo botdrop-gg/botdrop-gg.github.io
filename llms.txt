@@ -34,4 +34,4 @@ Commercial license: use, modify and rebrand for unlimited own and client project
 - Q: What if it doesn't work for me? A: 30-day money-back guarantee, no questions asked. Request a refund through Gumroad.
 
 ## Privacy
-Cookieless Cloudflare Web Analytics (aggregate counts only); newsletter via Kit (email only, one-click unsubscribe); checkout via Gumroad. Details: https://getbotdrop.com/privacy/
+Cookieless Cloudflare Web Analytics (aggregate counts only); newsletter via beehiiv (email only, one-click unsubscribe); checkout via Gumroad. Details: https://getbotdrop.com/privacy/
