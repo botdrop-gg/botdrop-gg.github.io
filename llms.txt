@@ -45,3 +45,5 @@ Cookieless Cloudflare Web Analytics (aggregate counts only); no cookies; checkou
 
 ## Contact
 hello@getbotdrop.com, for pre-sales questions, refunds (via Gumroad), bug reports and custom work. Replies within 1-2 business days. Page: https://getbotdrop.com/contact/
+
+Windows one-click launcher: every product includes a Windows .exe launcher (separate download) that walks you through setup and runs the bot on your own PC with a tray icon. Tested on a real Windows PC for the Gaming Community Kit; beta for the other products. Runs only while the PC is on. Guide: https://getbotdrop.com/deploy/#pc
