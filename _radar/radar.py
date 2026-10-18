@@ -156,7 +156,8 @@ def refresh(d, now):
     changed = strip(items) != strip(d.get("items", [])) or \
         {k: v["ok"] for k, v in status.items()} != {k: v.get("ok") for k, v in (d.get("sources") or {}).items()}
     last = parse(d.get("checked") or "")
-    if changed or not last or (now - last).total_seconds() > REFRESH_EVERY_H * 3600:
+    force = os.environ.get("RADAR_FORCE") == "true"  # manual run with "force" ticked: always refresh "last checked"
+    if changed or force or not last or (now - last).total_seconds() > REFRESH_EVERY_H * 3600:
         d.update(checked=iso(now), sources=status)
     if changed:
         d["changed"] = iso(now)
