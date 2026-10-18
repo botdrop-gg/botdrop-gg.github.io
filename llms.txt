@@ -53,3 +53,6 @@ Free how-to guides (no purchase needed):
 - How to Stop Scam Links in Discord: https://getbotdrop.com/guides/stop-scam-links-discord/
 - How to Host a Discord Bot on Your PC for Free: https://getbotdrop.com/guides/host-discord-bot-free-pc/
 - How to Get Steam Patch Notes in Discord: https://getbotdrop.com/guides/steam-patch-notes-discord/
+- How to Get YouTube Notifications on Discord (Plus Twitch Lives): https://getbotdrop.com/guides/youtube-notifications-discord/
+- How to Get Free Game Alerts in Discord (Epic and Steam): https://getbotdrop.com/guides/free-game-alerts-discord/
+- How to Get Steam Wishlist Sale Notifications (and Set Your Own Target Price): https://getbotdrop.com/guides/steam-wishlist-sale-notifications/
