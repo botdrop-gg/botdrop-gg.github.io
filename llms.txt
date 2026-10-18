@@ -60,3 +60,4 @@ Free how-to guides (no purchase needed):
 - How to Get YouTube Notifications on Discord (Plus Twitch Lives): https://getbotdrop.com/guides/youtube-notifications-discord/
 - How to Get Free Game Alerts in Discord (Epic and Steam): https://getbotdrop.com/guides/free-game-alerts-discord/
 - How to Get Steam Wishlist Sale Notifications (and Set Your Own Target Price): https://getbotdrop.com/guides/steam-wishlist-sale-notifications/
+- How to Make a Discord Bot with AI: 8 Starter Prompts: https://getbotdrop.com/guides/make-discord-bot-with-ai/
