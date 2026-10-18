@@ -1,0 +1,29 @@
+name: Refresh free games list
+# Rebuilds /free-epic-games/ (page + feed.xml) from Epic and Steam every 3 hours.
+# A failed store fetch keeps that store's last good data; nothing is committed unless the output changed.
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: free-games-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - name: Fetch and render
+        run: python3 _radar/radar.py
+      - name: Commit if changed
+        run: |
+          git add _radar/data.json free-epic-games/index.html free-epic-games/feed.xml
+          if git diff --cached --quiet; then echo "No changes, nothing to commit."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Free games list: refresh"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 5; done
+          exit 1

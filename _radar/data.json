@@ -1,0 +1,179 @@
+{
+ "checked": "2026-10-18T02:58:31Z",
+ "changed": "2026-10-18T02:58:31Z",
+ "sources": {
+  "Epic": {
+   "ok": true,
+   "at": "2026-10-18T02:58:31Z"
+  },
+  "Steam": {
+   "ok": true,
+   "at": "2026-10-18T02:58:31Z"
+  }
+ },
+ "items": [
+  {
+   "store": "Epic",
+   "id": "epic:db1202a30c5541dd99cdf54c918a9348:2026-10-15T15:00:00Z",
+   "title": "Agent A: A puzzle in disguise",
+   "url": "https://store.epicgames.com/en-US/p/agent-a-a-puzzle-in-disguise-42fe5f",
+   "img": "https://cdn1.epicgames.com/spt-assets/45db4fbe68fe43f4b025dec2014d42e7/agent-a-a-puzzle-in-disguise-3cppl.png",
+   "start": "2026-10-15T15:00:00Z",
+   "end": "2026-10-22T15:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "store": "Epic",
+   "id": "epic:6a846880836044a2adad614ac771f487:2026-10-15T15:00:00Z",
+   "title": "Bad Cheese",
+   "url": "https://store.epicgames.com/en-US/p/bad-cheese-4256d9",
+   "img": "https://cdn1.epicgames.com/spt-assets/6cbb0e3805c4436bafd028cafff48307/bad-cheese-16hj0.png",
+   "start": "2026-10-15T15:00:00Z",
+   "end": "2026-10-22T15:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "store": "Epic",
+   "id": "epic:06190191cede42afb633fe89ef08c27e:2026-10-22T15:00:00Z",
+   "title": "Home - A Unique Horror Adventure",
+   "url": "https://store.epicgames.com/en-US/p/home-19212a",
+   "img": "https://cdn1.epicgames.com/spt-assets/46fc0cdb9f164a848e916249a8f68fc7/home-1f6qi.png",
+   "start": "2026-10-22T15:00:00Z",
+   "end": "2026-10-29T15:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "store": "Epic",
+   "id": "epic:6aab3ddef4f84fbc9dd81c60f9d8549c:2026-10-22T15:00:00Z",
+   "title": "Sker Ritual",
+   "url": "https://store.epicgames.com/en-US/p/sker-ritual-aac702",
+   "img": "https://cdn1.epicgames.com/spt-assets/43d96f4437e34c87b7eff08831d1b1de/sker-ritual-1tuka.png",
+   "start": "2026-10-22T15:00:00Z",
+   "end": "2026-10-29T15:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "store": "Steam",
+   "id": "steam:5007040:1855506",
+   "title": "Voidtrain - Big Catch",
+   "url": "https://store.steampowered.com/app/5007040/Voidtrain_Big_Catch",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5007040/32e2576dc44c96f7bfa0dc6cc92f5cc0fb2560ef/header.jpg?t=1791824486",
+   "start": "",
+   "end": "2026-10-19T17:00:00Z",
+   "kind": "addon",
+   "base": "Voidtrain",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "store": "Steam",
+   "id": "steam:4114140:1782949",
+   "title": "Gear.Club Unlimited 3 - Gear.Club Signature Pack",
+   "url": "https://store.steampowered.com/app/4114140/GearClub_Unlimited_3_GearClub_Signature_Pack",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4114140/fb5a08bd84be36ce0979e83c12352b1713576454/header.jpg?t=1791446575",
+   "start": "",
+   "end": "2026-10-22T17:00:00Z",
+   "kind": "addon",
+   "base": "Gear.Club Unlimited 3",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "store": "Steam",
+   "id": "steam:4841320:1855193",
+   "title": "Squad Weapon Skins - Recon Team Pack",
+   "url": "https://store.steampowered.com/app/4841320/Squad_Weapon_Skins_Recon_Team_Pack",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4841320/6499eba31da772a3f68b9f73443e16ffe49dd61e/header.jpg?t=1792087188",
+   "start": "",
+   "end": "2026-10-25T18:00:00Z",
+   "kind": "addon",
+   "base": "Squad",
+   "seen": "2026-10-18T02:58:31Z"
+  }
+ ],
+ "history": [
+  {
+   "id": "epic:db1202a30c5541dd99cdf54c918a9348:2026-10-15T15:00:00Z",
+   "store": "Epic",
+   "title": "Agent A: A puzzle in disguise",
+   "url": "https://store.epicgames.com/en-US/p/agent-a-a-puzzle-in-disguise-42fe5f",
+   "start": "2026-10-15T15:00:00Z",
+   "end": "2026-10-22T15:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "id": "epic:6a846880836044a2adad614ac771f487:2026-10-15T15:00:00Z",
+   "store": "Epic",
+   "title": "Bad Cheese",
+   "url": "https://store.epicgames.com/en-US/p/bad-cheese-4256d9",
+   "start": "2026-10-15T15:00:00Z",
+   "end": "2026-10-22T15:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "id": "epic:06190191cede42afb633fe89ef08c27e:2026-10-22T15:00:00Z",
+   "store": "Epic",
+   "title": "Home - A Unique Horror Adventure",
+   "url": "https://store.epicgames.com/en-US/p/home-19212a",
+   "start": "2026-10-22T15:00:00Z",
+   "end": "2026-10-29T15:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "id": "epic:6aab3ddef4f84fbc9dd81c60f9d8549c:2026-10-22T15:00:00Z",
+   "store": "Epic",
+   "title": "Sker Ritual",
+   "url": "https://store.epicgames.com/en-US/p/sker-ritual-aac702",
+   "start": "2026-10-22T15:00:00Z",
+   "end": "2026-10-29T15:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "id": "steam:5007040:1855506",
+   "store": "Steam",
+   "title": "Voidtrain - Big Catch",
+   "url": "https://store.steampowered.com/app/5007040/Voidtrain_Big_Catch",
+   "start": "",
+   "end": "2026-10-19T17:00:00Z",
+   "kind": "addon",
+   "base": "Voidtrain",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "id": "steam:4114140:1782949",
+   "store": "Steam",
+   "title": "Gear.Club Unlimited 3 - Gear.Club Signature Pack",
+   "url": "https://store.steampowered.com/app/4114140/GearClub_Unlimited_3_GearClub_Signature_Pack",
+   "start": "",
+   "end": "2026-10-22T17:00:00Z",
+   "kind": "addon",
+   "base": "Gear.Club Unlimited 3",
+   "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "id": "steam:4841320:1855193",
+   "store": "Steam",
+   "title": "Squad Weapon Skins - Recon Team Pack",
+   "url": "https://store.steampowered.com/app/4841320/Squad_Weapon_Skins_Recon_Team_Pack",
+   "start": "",
+   "end": "2026-10-25T18:00:00Z",
+   "kind": "addon",
+   "base": "Squad",
+   "seen": "2026-10-18T02:58:31Z"
+  }
+ ]
+}
