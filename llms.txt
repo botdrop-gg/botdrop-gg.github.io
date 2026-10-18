@@ -36,7 +36,7 @@ BotDrop is not affiliated with, endorsed by, or sponsored by Valve, Epic Games, 
 - Q: Do I get the full source code? A: Yes. Every BotDrop product is a zip of readable Python source code with tests, a setup guide, a Dockerfile and Render/Railway/Procfile deploy configs. You host it yourself.
 - Q: Can I rebrand it or use it for clients? A: Yes. The commercial license lets you use, modify and rebrand the bots for your own projects and client projects, including bots you run for others. You may not resell or redistribute the template itself as a template or kit.
 - Q: Do I need paid API keys? A: No. The bots use public Steam, Epic and GitHub endpoints (some Steam features use public, undocumented Steam store endpoints, not the official Steam Web API; see the Terms). Discord bots need a free Discord bot token. Review Verdict for Steam can optionally use a free local Ollama model (beta) or your own LLM key.
-- Q: What is tested? A: Every product has unit tests and its data fetchers were run against the real public APIs. Every Docker image was built and run. Anything not live-tested, like the AI rewrite, the Twitch API path, the Windows launchers (including the new Kit 2.0 launcher; only the previous Kit launcher was tested on a real Windows PC), or Railway deploys, is labelled beta.
+- Q: What is tested? A: Every product has unit tests and its data fetchers were run against the real public APIs. Every Docker image was built and run. Anything not live-tested, like the AI rewrite, the Twitch API path, the Windows launchers other than the Kit's, or Railway deploys, is labelled beta.
 - Q: What's in the bundle? A: 10 products: the Gaming Community Kit for Discord, Stream Alert Bot, Mod Bot, Wishlist Deal Alert, Patch Tracker, Player Count Tracker, What to Play Tonight and the Free Games Radar, plus two developer tools, Review Verdict for Steam and Repo Health Checker for GitHub. $29 launch price until Jan 1, 2027, then $49. The 9 paid products sold separately add up to $113. Intel for Steam is sold separately.
 - Q: What if it doesn't work for me? A: 30-day refund if the template doesn't work for you. Request it through Gumroad. Details: https://getbotdrop.com/refunds/
 
@@ -46,7 +46,7 @@ Cookieless Cloudflare Web Analytics (aggregate counts only); no cookies; checkou
 ## Contact
 hello@getbotdrop.com, for pre-sales questions, refunds (via Gumroad), bug reports and custom work. Replies within 1-2 business days. Page: https://getbotdrop.com/contact/
 
-Windows one-click launcher: every product includes a Windows .exe launcher (separate download) that walks you through setup and runs the bot on your own PC with a tray icon. The previous Gaming Community Kit launcher was tested on a real Windows PC; the Kit 2.0 launcher and the other products' launchers are beta. Runs only while the PC is on. Guide: https://getbotdrop.com/deploy/#pc
+Windows one-click launcher: every product includes a Windows .exe launcher (separate download) that walks you through setup and runs the bot on your own PC with a tray icon. Tested on a real Windows PC for the Gaming Community Kit; beta for the other products. Runs only while the PC is on. Guide: https://getbotdrop.com/deploy/#pc
 
 ## Free games right now
 Live list of games free to keep on Epic and Steam, plus upcoming Epic freebies, refreshed every 3 hours: https://getbotdrop.com/free-epic-games/
