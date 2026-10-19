@@ -65,3 +65,6 @@ Free how-to guides (no purchase needed):
 ## License, updates and support
 Plain summary: https://getbotdrop.com/license/ · Changelog: https://getbotdrop.com/changelog/ · SHA-256 checksums for every download: https://getbotdrop.com/checksums/
 Updates are free via Gumroad re-download. Support by email (hello@getbotdrop.com), best-effort, typically within 2 business days. Windows launchers are not code-signed yet.
+
+## Free tool: Review Pulse for Steam
+Free, MIT-licensed Python script (standard library only, no API key) that posts each new Steam review of one game to a Discord webhook, with Steam's own totals (total reviews, % positive, review score label). No duplicates; failed posts are retried. Tested live Oct 19, 2026; the Dockerfile and Windows are not tested yet. Page: https://getbotdrop.com/review-pulse-for-steam/ · Source: https://github.com/botdrop-gg/review-pulse-for-steam
