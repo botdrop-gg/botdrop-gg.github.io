@@ -1,41 +1,17 @@
 {
- "checked": "2026-10-22T13:05:57Z",
- "changed": "2026-10-19T19:01:32Z",
+ "checked": "2026-10-22T15:52:17Z",
+ "changed": "2026-10-22T15:52:17Z",
  "sources": {
   "Epic": {
    "ok": true,
-   "at": "2026-10-22T13:05:57Z"
+   "at": "2026-10-22T15:52:17Z"
   },
   "Steam": {
    "ok": true,
-   "at": "2026-10-22T13:05:57Z"
+   "at": "2026-10-22T15:52:17Z"
   }
  },
  "items": [
-  {
-   "store": "Epic",
-   "id": "epic:db1202a30c5541dd99cdf54c918a9348:2026-10-15T15:00:00Z",
-   "title": "Agent A: A puzzle in disguise",
-   "url": "https://store.epicgames.com/en-US/p/agent-a-a-puzzle-in-disguise-42fe5f",
-   "img": "https://cdn1.epicgames.com/spt-assets/45db4fbe68fe43f4b025dec2014d42e7/agent-a-a-puzzle-in-disguise-3cppl.png",
-   "start": "2026-10-15T15:00:00Z",
-   "end": "2026-10-22T15:00:00Z",
-   "kind": "game",
-   "base": "",
-   "seen": "2026-10-18T02:58:31Z"
-  },
-  {
-   "store": "Epic",
-   "id": "epic:6a846880836044a2adad614ac771f487:2026-10-15T15:00:00Z",
-   "title": "Bad Cheese",
-   "url": "https://store.epicgames.com/en-US/p/bad-cheese-4256d9",
-   "img": "https://cdn1.epicgames.com/spt-assets/6cbb0e3805c4436bafd028cafff48307/bad-cheese-16hj0.png",
-   "start": "2026-10-15T15:00:00Z",
-   "end": "2026-10-22T15:00:00Z",
-   "kind": "game",
-   "base": "",
-   "seen": "2026-10-18T02:58:31Z"
-  },
   {
    "store": "Epic",
    "id": "epic:06190191cede42afb633fe89ef08c27e:2026-10-22T15:00:00Z",
@@ -59,6 +35,18 @@
    "kind": "game",
    "base": "",
    "seen": "2026-10-18T02:58:31Z"
+  },
+  {
+   "store": "Epic",
+   "id": "epic:4e469c7d8bbf49bcabc2c07127d3d946:2026-10-29T15:00:00Z",
+   "title": "Sorry We're Closed",
+   "url": "https://store.epicgames.com/en-US/p/sorry-were-closed-724c86",
+   "img": "https://cdn1.epicgames.com/spt-assets/9ab7eaaeb2f041969b350955b789f0f7/sorry-were-closed-1orqh.png",
+   "start": "2026-10-29T15:00:00Z",
+   "end": "2026-11-05T16:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-22T15:52:17Z"
   },
   {
    "store": "Steam",
@@ -86,6 +74,17 @@
   }
  ],
  "history": [
+  {
+   "id": "epic:4e469c7d8bbf49bcabc2c07127d3d946:2026-10-29T15:00:00Z",
+   "store": "Epic",
+   "title": "Sorry We're Closed",
+   "url": "https://store.epicgames.com/en-US/p/sorry-were-closed-724c86",
+   "start": "2026-10-29T15:00:00Z",
+   "end": "2026-11-05T16:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-22T15:52:17Z"
+  },
   {
    "id": "epic:db1202a30c5541dd99cdf54c918a9348:2026-10-15T15:00:00Z",
    "store": "Epic",
