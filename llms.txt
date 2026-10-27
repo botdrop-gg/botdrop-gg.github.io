@@ -61,6 +61,7 @@ Free how-to guides (no purchase needed):
 - How to Get Free Game Alerts in Discord (Epic and Steam): https://getbotdrop.com/guides/free-game-alerts-discord/
 - How to Get Steam Wishlist Sale Notifications (and Set Your Own Target Price): https://getbotdrop.com/guides/steam-wishlist-sale-notifications/
 - How to Make a Discord Bot with AI: 8 Starter Prompts: https://getbotdrop.com/guides/make-discord-bot-with-ai/
+- How to Share a Self-Hosted Discord Bot on GitHub (Free): https://getbotdrop.com/guides/share-self-hosted-discord-bot-github/
 
 ## License, updates and support
 Plain summary: https://getbotdrop.com/license/ · Changelog: https://getbotdrop.com/changelog/ · SHA-256 checksums for every download: https://getbotdrop.com/checksums/
