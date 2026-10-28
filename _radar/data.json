@@ -1,14 +1,14 @@
 {
- "checked": "2026-10-28T01:20:31Z",
- "changed": "2026-10-25T18:53:31Z",
+ "checked": "2026-10-28T13:17:34Z",
+ "changed": "2026-10-28T13:17:34Z",
  "sources": {
   "Epic": {
    "ok": true,
-   "at": "2026-10-28T01:20:31Z"
+   "at": "2026-10-28T13:17:34Z"
   },
   "Steam": {
    "ok": true,
-   "at": "2026-10-28T01:20:31Z"
+   "at": "2026-10-28T13:17:34Z"
   }
  },
  "items": [
@@ -29,7 +29,7 @@
    "id": "epic:6aab3ddef4f84fbc9dd81c60f9d8549c:2026-10-22T15:00:00Z",
    "title": "Sker Ritual",
    "url": "https://store.epicgames.com/en-US/p/sker-ritual-aac702",
-   "img": "https://cdn1.epicgames.com/spt-assets/43d96f4437e34c87b7eff08831d1b1de/sker-ritual-1tuka.png",
+   "img": "https://cdn1.epicgames.com/spt-assets/43d96f4437e34c87b7eff08831d1b1de/sker-ritual-14x61.jpg",
    "start": "2026-10-22T15:00:00Z",
    "end": "2026-10-29T15:00:00Z",
    "kind": "game",
