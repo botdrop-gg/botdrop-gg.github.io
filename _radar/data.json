@@ -1,14 +1,14 @@
 {
- "checked": "2026-10-30T07:20:12Z",
- "changed": "2026-10-29T19:11:51Z",
+ "checked": "2026-10-30T19:04:34Z",
+ "changed": "2026-10-30T19:04:34Z",
  "sources": {
   "Epic": {
    "ok": true,
-   "at": "2026-10-30T07:20:12Z"
+   "at": "2026-10-30T19:04:34Z"
   },
   "Steam": {
    "ok": true,
-   "at": "2026-10-30T07:20:12Z"
+   "at": "2026-10-30T19:04:34Z"
   }
  },
  "items": [
@@ -62,6 +62,18 @@
   },
   {
    "store": "Steam",
+   "id": "steam:1583850:1901579",
+   "title": "Asleep: Act 1",
+   "url": "https://store.steampowered.com/app/1583850/Asleep_Act_1",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1583850/b0106b8af875bcac09ab575d8e704d4d50ebafb3/header_alt_assets_1.jpg?t=1793381725",
+   "start": "",
+   "end": "2026-11-02T18:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-30T19:04:34Z"
+  },
+  {
+   "store": "Steam",
    "id": "steam:4693960:1782986",
    "title": "Hunting Simulator 3 - Classic American Hunter Pack",
    "url": "https://store.steampowered.com/app/4693960/Hunting_Simulator_3_Classic_American_Hunter_Pack",
@@ -74,6 +86,17 @@
   }
  ],
  "history": [
+  {
+   "id": "steam:1583850:1901579",
+   "store": "Steam",
+   "title": "Asleep: Act 1",
+   "url": "https://store.steampowered.com/app/1583850/Asleep_Act_1",
+   "start": "",
+   "end": "2026-11-02T18:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-10-30T19:04:34Z"
+  },
   {
    "id": "steam:785890:1901258",
    "store": "Steam",
