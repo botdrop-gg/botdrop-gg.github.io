@@ -1,14 +1,14 @@
 {
- "checked": "2026-10-30T19:04:34Z",
- "changed": "2026-10-30T19:04:34Z",
+ "checked": "2026-10-31T01:20:56Z",
+ "changed": "2026-10-31T01:20:56Z",
  "sources": {
   "Epic": {
    "ok": true,
-   "at": "2026-10-30T19:04:34Z"
+   "at": "2026-10-31T01:20:56Z"
   },
   "Steam": {
    "ok": true,
-   "at": "2026-10-30T19:04:34Z"
+   "at": "2026-10-31T01:20:56Z"
   }
  },
  "items": [
@@ -41,7 +41,7 @@
    "id": "epic:a9748abde1c94b66aae5250bb9fc5503:2026-11-05T16:00:00Z",
    "title": "Idle Champions of the Forgotten Realms",
    "url": "https://store.epicgames.com/en-US/p/idle-champions-of-the-forgotten-realms",
-   "img": "https://cdn1.epicgames.com/spt-assets/a53f91e55c6840018cb5de0b204f1ad9/idle-champions-of-the-forgotten-realms-1xbn9.jpg",
+   "img": "https://cdn1.epicgames.com/spt-assets/a53f91e55c6840018cb5de0b204f1ad9/idle-champions-of-the-forgotten-realms-1cv5z.jpg",
    "start": "2026-11-05T16:00:00Z",
    "end": "2026-11-12T16:00:00Z",
    "kind": "game",
