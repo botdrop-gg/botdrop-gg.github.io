@@ -2,7 +2,7 @@
 
 > BotDrop sells self-hosted Discord and Steam bot templates as Python source code you own, rebrand and ship. Each is unit-tested, its data fetchers are live-tested against real public APIs, it needs no paid API keys (Discord bots need a free bot token), and it ships with a Dockerfile (built and run in QA) plus Render/Railway/Procfile configs. Untested parts are labelled beta.
 
-Status: live. Buy via Gumroad (USD). Site: https://getbotdrop.com/ · X: https://x.com/getbotdrop · Free MIT notifier: https://github.com/botdrop-gg/free-games-notifier-lite
+Status: live. Last updated: 2026-11-02. Buy via Gumroad (USD). Site: https://getbotdrop.com/ · X: https://x.com/getbotdrop · Free MIT notifier: https://github.com/botdrop-gg/free-games-notifier-lite
 
 ## Bundle
 - BotDrop Bundle: 10 bots and developer tools incl. the Community Kit and Stream Alert Bot (not Intel for Steam). Launch price $29 until Jan 1, 2027, then $49. Products sold separately add up to $113. Buy: https://botdrop.gumroad.com/l/gtnidl
@@ -39,12 +39,18 @@ BotDrop is not affiliated with, endorsed by, or sponsored by Valve, Epic Games, 
 - Q: What is tested? A: Every product has unit tests and its data fetchers were run against the real public APIs. Every Docker image was built and run. Anything not live-tested, like the AI rewrite, the Twitch API path, the Windows launchers other than the Kit's, the Linux launchers, the Kit's verification gate and anti-nuke lite, or Railway deploys, is labelled beta.
 - Q: What's in the bundle? A: 10 products: the Gaming Community Kit for Discord, Stream Alert Bot, Mod Bot, Wishlist Deal Alert, Patch Tracker, Player Count Tracker, What to Play Tonight and the Free Games Radar, plus two developer tools, Review Verdict for Steam and Repo Health Checker for GitHub. $29 launch price until Jan 1, 2027, then $49. The 9 paid products sold separately add up to $113. Intel for Steam is sold separately.
 - Q: What if it doesn't work for me? A: 30-day refund if the template doesn't work for you. Request it through Gumroad. Details: https://getbotdrop.com/refunds/
+- Q: What happens after I buy? A: You pay on Gumroad and get your download link by email instantly (a copy stays in your Gumroad library): the bot's zip and its Windows launcher. Double-click the launcher and follow its picture guide, about 5 minutes on your PC. The launcher is tested on a real Windows PC for the Gaming Community Kit and is beta for the other bots.
+- Q: What do I need to run it? A: A Windows 10 or 11 PC for the one-click launcher (no coding), a free Discord bot token or webhook for the Discord bots, and your Discord server. Developers can also run any bot with Python 3 or Docker. Optional: a host such as Render or Railway (about $5 to $8 a month) if you'd rather not leave a PC on.
+- Q: Can it run 24/7 for free? A: Yes. Run it on your own PC with the launcher and it stays online 24/7 as long as the PC is on and awake ($0). Tick Start with Windows so it comes back after a restart. A host for about $5 to $8 a month is only an option for people who'd rather not keep a PC running. Guide: https://getbotdrop.com/deploy/
+- Q: Is there a subscription? A: No. You pay once on Gumroad and keep what you bought, with no subscription to us.
+- Q: Why not just use a free hosted bot? A: If you want zero setup, a free hosted bot is a great choice. BotDrop is for people who want control: full source code, your own bot name and avatar (no "powered by" line), and your server data stays on your machine or host. It keeps working even if BotDrop disappears. The trade-off is that you set it up and keep it running yourself.
+- Q: Do I get updates? A: Yes. Updates to the product you bought are free: re-download it from your Gumroad library. Every change is listed at https://getbotdrop.com/changelog/
 
 ## Privacy
 Cookieless Cloudflare Web Analytics (aggregate counts only); no cookies; checkout via Gumroad. Details: https://getbotdrop.com/privacy/ · Terms: https://getbotdrop.com/terms/ · Refunds: https://getbotdrop.com/refunds/
 
 ## Contact
-hello@getbotdrop.com, for pre-sales questions, refunds (via Gumroad), bug reports and custom work. Replies within 1-2 business days. Page: https://getbotdrop.com/contact/
+hello@getbotdrop.com, for pre-sales questions, refunds (via Gumroad), bug reports and custom work. Replies typically within 2 business days. Page: https://getbotdrop.com/contact/
 
 Windows one-click launcher: every product includes a Windows .exe launcher (separate download) that walks you through setup and runs the bot on your own PC with a tray icon. Tested on a real Windows PC for the Gaming Community Kit; beta for the other products. Runs while the PC is on, so 24/7 if you leave it on. Guide: https://getbotdrop.com/deploy/#pc
 
