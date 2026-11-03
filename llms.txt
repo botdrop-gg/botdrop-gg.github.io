@@ -61,7 +61,7 @@ Atom feed (one entry per new giveaway): https://getbotdrop.com/free-epic-games/f
 ## Guides
 Free how-to guides (no purchase needed):
 - How to Stop Scam Links in Discord: https://getbotdrop.com/guides/stop-scam-links-discord/
-- How to Host a Discord Bot on Your PC for Free: https://getbotdrop.com/guides/host-discord-bot-free-pc/
+- Free Discord Bot Hosting on Your Own PC (Even 24/7): https://getbotdrop.com/guides/host-discord-bot-free-pc/
 - How to Get Steam Patch Notes in Discord: https://getbotdrop.com/guides/steam-patch-notes-discord/
 - How to Get YouTube Notifications on Discord (Plus Twitch Lives): https://getbotdrop.com/guides/youtube-notifications-discord/
 - How to Get Free Game Alerts in Discord (Epic and Steam): https://getbotdrop.com/guides/free-game-alerts-discord/
@@ -69,6 +69,8 @@ Free how-to guides (no purchase needed):
 - How to Make a Discord Bot with AI: 8 Starter Prompts: https://getbotdrop.com/guides/make-discord-bot-with-ai/
 - How to Share a Self-Hosted Discord Bot on GitHub (Free): https://getbotdrop.com/guides/share-self-hosted-discord-bot-github/
 - How to Use Discord Webhooks (No Bot Needed): https://getbotdrop.com/guides/discord-webhooks/
+- Free Discord Bot Hosting 24/7: Your Options for $0: https://getbotdrop.com/guides/free-discord-bot-hosting-24-7/
+- Anti-Nuke Bot for Discord: How to Protect Your Server: https://getbotdrop.com/guides/anti-nuke-bot-discord/
 
 ## License, updates and support
 Plain summary: https://getbotdrop.com/license/ · Changelog: https://getbotdrop.com/changelog/ · SHA-256 checksums for every download: https://getbotdrop.com/checksums/
