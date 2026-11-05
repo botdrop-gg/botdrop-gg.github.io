@@ -1,29 +1,17 @@
 {
- "checked": "2026-11-05T13:32:27Z",
- "changed": "2026-11-02T19:14:34Z",
+ "checked": "2026-11-05T16:21:39Z",
+ "changed": "2026-11-05T16:21:39Z",
  "sources": {
   "Epic": {
    "ok": true,
-   "at": "2026-11-05T13:32:27Z"
+   "at": "2026-11-05T16:21:39Z"
   },
   "Steam": {
    "ok": true,
-   "at": "2026-11-05T13:32:27Z"
+   "at": "2026-11-05T16:21:39Z"
   }
  },
  "items": [
-  {
-   "store": "Epic",
-   "id": "epic:4e469c7d8bbf49bcabc2c07127d3d946:2026-10-29T15:00:00Z",
-   "title": "Sorry We're Closed",
-   "url": "https://store.epicgames.com/en-US/p/sorry-were-closed-724c86",
-   "img": "https://cdn1.epicgames.com/spt-assets/9ab7eaaeb2f041969b350955b789f0f7/sorry-were-closed-1orqh.png",
-   "start": "2026-10-29T15:00:00Z",
-   "end": "2026-11-05T16:00:00Z",
-   "kind": "game",
-   "base": "",
-   "seen": "2026-10-22T15:52:17Z"
-  },
   {
    "store": "Epic",
    "id": "epic:3be0a0d8479946d78f60d90c9442a0b4:2026-11-05T16:00:00Z",
@@ -49,6 +37,18 @@
    "seen": "2026-10-29T16:10:40Z"
   },
   {
+   "store": "Epic",
+   "id": "epic:9975548b6d404a94b8a9bdb34cad49e9:2026-11-12T16:00:00Z",
+   "title": "Knightica",
+   "url": "https://store.epicgames.com/en-US/p/knightica-3be45c",
+   "img": "https://cdn1.epicgames.com/spt-assets/357100ca5613420e98208c5f14585e9d/knightica-1nuxm.png",
+   "start": "2026-11-12T16:00:00Z",
+   "end": "2026-11-19T16:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-11-05T16:21:39Z"
+  },
+  {
    "store": "Steam",
    "id": "steam:4693960:1782986",
    "title": "Hunting Simulator 3 - Classic American Hunter Pack",
@@ -62,6 +62,17 @@
   }
  ],
  "history": [
+  {
+   "id": "epic:9975548b6d404a94b8a9bdb34cad49e9:2026-11-12T16:00:00Z",
+   "store": "Epic",
+   "title": "Knightica",
+   "url": "https://store.epicgames.com/en-US/p/knightica-3be45c",
+   "start": "2026-11-12T16:00:00Z",
+   "end": "2026-11-19T16:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-11-05T16:21:39Z"
+  },
   {
    "id": "steam:1583850:1901579",
    "store": "Steam",
