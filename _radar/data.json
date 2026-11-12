@@ -1,14 +1,14 @@
 {
- "checked": "2026-11-12T16:21:18Z",
- "changed": "2026-11-12T16:21:18Z",
+ "checked": "2026-11-12T19:16:36Z",
+ "changed": "2026-11-12T19:16:36Z",
  "sources": {
   "Epic": {
    "ok": true,
-   "at": "2026-11-12T16:21:18Z"
+   "at": "2026-11-12T19:16:36Z"
   },
   "Steam": {
    "ok": true,
-   "at": "2026-11-12T16:21:18Z"
+   "at": "2026-11-12T19:16:36Z"
   }
  },
  "items": [
@@ -47,18 +47,6 @@
    "kind": "game",
    "base": "",
    "seen": "2026-11-12T16:21:18Z"
-  },
-  {
-   "store": "Steam",
-   "id": "steam:4693960:1782986",
-   "title": "Hunting Simulator 3 - Classic American Hunter Pack",
-   "url": "https://store.steampowered.com/app/4693960/Hunting_Simulator_3_Classic_American_Hunter_Pack",
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4693960/d37423b5b7941444dfe63d8b185ed680ff03009d/header.jpg?t=1793269525",
-   "start": "",
-   "end": "2026-11-12T18:00:00Z",
-   "kind": "addon",
-   "base": "Hunting Simulator 3",
-   "seen": "2026-10-29T10:07:00Z"
   }
  ],
  "history": [
