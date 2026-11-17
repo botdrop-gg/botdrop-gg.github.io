@@ -55,7 +55,7 @@ hello@getbotdrop.com, for pre-sales questions, refunds (via Gumroad), bug report
 Windows one-click launcher: every product includes a Windows .exe launcher (separate download) that walks you through setup and runs the bot on your own PC with a tray icon. Tested on a real Windows PC for the Gaming Community Kit; beta for the other products. Runs while the PC is on, so 24/7 if you leave it on. Guide: https://getbotdrop.com/deploy/#pc
 
 ## Free games right now
-Live list of games free to keep on Epic and Steam, plus upcoming Epic freebies, refreshed every 3 hours: https://getbotdrop.com/free-epic-games/
+Epic Games free games list (what's free to keep right now, what's next, plus Steam 100%-off giveaways), refreshed every 3 hours: https://getbotdrop.com/free-epic-games/
 Atom feed (one entry per new giveaway): https://getbotdrop.com/free-epic-games/feed.xml
 
 ## Guides

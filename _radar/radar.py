@@ -151,7 +151,15 @@ def refresh(d, now):
     hist = {h["id"]: h for h in d.get("history", [])}
     for i in items:
         hist[i["id"]] = {k: i[k] for k in ("id", "store", "title", "url", "start", "end", "kind", "base", "seen")}
-    history = sorted(hist.values(), key=lambda h: h["seen"], reverse=True)[:HISTORY_MAX]
+    live_ids = {i["id"] for i in items}
+    def _keep_hist(h):
+        s = parse(h.get("start"))
+        # Upcoming announcements that vanished from the store feed were often swapped out.
+        if s and s > now and h["id"] not in live_ids:
+            return False
+        return True
+    history = [h for h in hist.values() if _keep_hist(h)]
+    history = sorted(history, key=lambda h: h["seen"], reverse=True)[:HISTORY_MAX]
     strip = lambda L: [{k: v for k, v in x.items() if k != "seen"} for x in L]
     changed = strip(items) != strip(d.get("items", [])) or \
         {k: v["ok"] for k, v in status.items()} != {k: v.get("ok") for k, v in (d.get("sources") or {}).items()}
@@ -206,10 +214,45 @@ def split(d, now):
         (up if s and s > now else cur).append(i)
     return cur, up
 
+def past_games(d, now, store=None):
+    """Ended full-game giveaways, newest first. Skips add-ons and swapped upcoming announcements."""
+    live_ids = {i["id"] for i in d.get("items", [])}
+    out = []
+    for h in d.get("history", []):
+        if h.get("kind") == "addon":
+            continue
+        if store and h.get("store") != store:
+            continue
+        s, en = parse(h.get("start")), parse(h.get("end"))
+        if s and s > now and h["id"] not in live_ids:
+            continue
+        if en and en <= now:
+            out.append(h)
+    out.sort(key=lambda h: (h.get("end") or "", h.get("start") or ""), reverse=True)
+    return out
+
+def hist_table(rows):
+    if not rows:
+        return ""
+    out = ['<table class="rghist"><thead><tr><th>Game</th><th>Store</th><th>Free from</th><th>Free until</th></tr></thead><tbody>']
+    for h in rows:
+        start = f'<time datetime="{h["start"]}" data-t>{utc_label(h["start"])}</time>' if h.get("start") else "See the store page"
+        end = f'<time datetime="{h["end"]}" data-t>{utc_label(h["end"])}</time>' if h.get("end") else "See the store page"
+        out.append(
+            f'<tr><td><a href="{E(h["url"])}" target="_blank" rel="noopener">{E(h["title"])}</a></td>'
+            f'<td>{E(h["store"])}</td><td>{start}</td><td>{end}</td></tr>'
+        )
+    out.append("</tbody></table>")
+    return "".join(out)
+
 def render_list(d, now):
     cur, up = split(d, now)
-    games = [i for i in cur if i["kind"] == "game" or i["store"] == "Epic"]
+    epic_now = [i for i in cur if i["store"] == "Epic"]
+    epic_up = [i for i in up if i["store"] == "Epic"]
+    steam_now = [i for i in cur if i["store"] == "Steam" and i["kind"] == "game"]
     addons = [i for i in cur if i["store"] == "Steam" and i["kind"] != "game"]
+    week_ago = now - dt.timedelta(days=7)
+    steam_week_past = [h for h in past_games(d, now, "Steam") if parse(h.get("end")) and parse(h["end"]) > week_ago]
     n = 0
     def ul(L, mode):
         nonlocal n
@@ -217,15 +260,32 @@ def render_list(d, now):
         for i in L:
             out.append(card(i, mode, n >= 2)); n += 1
         return '<ul class="rgs">' + "".join(out) + "</ul>"
-    h = [f'<h2 id="now">Free to keep right now <span class="cnt">{len(games)}</span></h2>']
-    h.append(ul(games, "now") if games else '<p class="rgnone">Nothing is free to keep on Epic or Steam at this moment. Epic usually starts a new giveaway every week.</p>')
-    if not any(i["store"] == "Steam" for i in games):
-        h.append('<p class="rgnote">No full Steam games are free to keep right now. Steam giveaways are rare and short, which is why we check every 3 hours.</p>')
-    h.append(f'<h2 id="next">Coming next on Epic <span class="cnt">{len(up)}</span></h2>')
-    h.append(ul(up, "up") if up else '<p class="rgnone">Epic hasn&rsquo;t announced the next free games yet. They usually appear a week ahead.</p>')
+    h = [f'<h2 id="now">Free Epic games right now <span class="cnt">{len(epic_now)}</span></h2>']
+    h.append(ul(epic_now, "now") if epic_now else
+             '<p class="rgnone">Nothing is free to keep on the Epic Games Store at this moment. Epic usually starts a new giveaway every week.</p>')
+    h.append(f'<h2 id="next">Coming next on Epic <span class="cnt">{len(epic_up)}</span></h2>')
+    h.append(ul(epic_up, "up") if epic_up else
+             '<p class="rgnone">Epic hasn&rsquo;t announced the next free games yet. They usually appear a week ahead.</p>')
+    steam_week_n = len(steam_now) + len(steam_week_past)
+    h.append(f'<h2 id="steam">Free Steam games this week <span class="cnt">{steam_week_n}</span></h2>')
+    h.append('<p class="rgnote">Full games that are or were 100% off to keep in the last 7 days (US store). Steam giveaways are rare and often last only a few hours, which is why we check every 3 hours. Free weekends and free-to-play titles aren&rsquo;t listed.</p>')
+    if steam_now:
+        h.append(ul(steam_now, "now"))
+    if steam_week_past:
+        h.append(hist_table(steam_week_past))
+    if not steam_now and not steam_week_past:
+        h.append('<p class="rgnone">No full Steam games are free to keep this week.</p>')
+        older = past_games(d, now, "Steam")[:5]
+        if older:
+            h.append('<p class="rgnote">Recent Steam giveaways we&rsquo;ve recorded:</p>')
+            h.append(hist_table(older))
     if addons:
         h.append(f'<h2 id="addons">Free Steam add-ons <span class="cnt">{len(addons)}</span></h2><p class="rgnote">100% off and yours to keep, but each one only works if you own its base game.</p>')
         h.append(ul(addons, "now"))
+    past_epic = past_games(d, now, "Epic")
+    h.append(f'<h2 id="recent">Recent Epic Games free games <span class="cnt">{len(past_epic)}</span></h2>')
+    h.append('<p class="rgnote">Past 100%-off Epic giveaways we&rsquo;ve recorded for the US store, newest first. Announced upcoming games that were later swapped out are not listed. Always check the store page: dates can vary by region.</p>')
+    h.append(hist_table(past_epic) if past_epic else '<p class="rgnone">No past Epic giveaways recorded yet.</p>')
     src = d.get("sources") or {}
     bad = [k for k, v in src.items() if not v.get("ok")]
     stat = (f'<p class="rgstat" role="status">Last checked: <time datetime="{d["checked"]}" data-t>{utc_label(d["checked"])}</time>.'
@@ -238,9 +298,9 @@ def render_list(d, now):
 
 def render_ld(d, cur):
     ld = {"@context": "https://schema.org", "@type": "WebPage", "@id": URL + "#page", "url": URL,
-          "name": "Free Epic Games right now, plus Steam giveaways", "dateModified": d.get("changed") or d.get("checked"),
+          "name": "Epic Games Free Games List: Now and Next | BotDrop", "dateModified": d.get("changed") or d.get("checked"),
           "isPartOf": {"@id": BASE + "#org"},
-          "mainEntity": {"@type": "ItemList", "name": "Games free to keep right now", "numberOfItems": len(cur),
+          "mainEntity": {"@type": "ItemList", "name": "Epic Games free games list", "numberOfItems": len(cur),
                          "itemListElement": [{"@type": "ListItem", "position": n + 1, "name": i["title"], "url": i["url"]} for n, i in enumerate(cur)]}}
     return '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>"
 
@@ -248,7 +308,7 @@ def render_feed(d):
     esc = lambda s: html.escape(str(s), quote=False)
     upd = max([h["seen"] for h in d["history"]] or [d.get("checked") or iso(now_utc())])
     out = ['<?xml version="1.0" encoding="utf-8"?>', '<feed xmlns="http://www.w3.org/2005/Atom">',
-           "<title>Free games to keep on Epic and Steam (BotDrop)</title>",
+           "<title>Epic Games free games list, plus Steam (BotDrop)</title>",
            "<subtitle>One entry per new Epic or Steam giveaway. Checked every 3 hours. Always confirm on the store page before claiming.</subtitle>",
            f'<link rel="alternate" type="text/html" href="{URL}"/>', f'<link rel="self" type="application/atom+xml" href="{URL}feed.xml"/>',
            f"<id>{URL}</id>", f"<updated>{upd}</updated>", "<author><name>BotDrop</name><uri>https://getbotdrop.com/</uri></author>",
