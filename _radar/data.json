@@ -1,14 +1,14 @@
 {
- "checked": "2026-11-18T11:53:28Z",
- "changed": "2026-11-16T19:40:45Z",
+ "checked": "2026-11-18T20:39:41Z",
+ "changed": "2026-11-18T20:39:41Z",
  "sources": {
   "Epic": {
    "ok": true,
-   "at": "2026-11-18T11:53:28Z"
+   "at": "2026-11-18T20:39:41Z"
   },
   "Steam": {
    "ok": true,
-   "at": "2026-11-18T11:53:28Z"
+   "at": "2026-11-18T20:39:41Z"
   }
  },
  "items": [
@@ -35,9 +35,32 @@
    "kind": "game",
    "base": "",
    "seen": "2026-11-12T16:21:18Z"
+  },
+  {
+   "store": "Epic",
+   "id": "epic:0623017cf9f341efbe07557f46beb4e8:2026-11-26T16:00:00Z",
+   "title": "Firestone – Idle Clicker Online RPG",
+   "url": "https://store.epicgames.com/en-US/p/firestone-online-idle-rpg-bfd04b",
+   "img": "https://cdn1.epicgames.com/spt-assets/69576a28f7154fe9a0dce97508da5163/firestone-online-idle-rpg-i52vr.jpg",
+   "start": "2026-11-26T16:00:00Z",
+   "end": "2026-12-03T16:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-11-18T20:39:41Z"
   }
  ],
  "history": [
+  {
+   "id": "epic:0623017cf9f341efbe07557f46beb4e8:2026-11-26T16:00:00Z",
+   "store": "Epic",
+   "title": "Firestone – Idle Clicker Online RPG",
+   "url": "https://store.epicgames.com/en-US/p/firestone-online-idle-rpg-bfd04b",
+   "start": "2026-11-26T16:00:00Z",
+   "end": "2026-12-03T16:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-11-18T20:39:41Z"
+  },
   {
    "id": "epic:1f9a12b06b4f437790b6913ad136a08c:2026-11-19T16:00:00Z",
    "store": "Epic",
