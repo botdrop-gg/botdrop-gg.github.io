@@ -1,29 +1,17 @@
 {
- "checked": "2026-11-19T11:50:59Z",
- "changed": "2026-11-18T20:39:41Z",
+ "checked": "2026-11-19T20:45:08Z",
+ "changed": "2026-11-19T20:45:08Z",
  "sources": {
   "Epic": {
    "ok": true,
-   "at": "2026-11-19T11:50:59Z"
+   "at": "2026-11-19T20:45:08Z"
   },
   "Steam": {
    "ok": true,
-   "at": "2026-11-19T11:50:59Z"
+   "at": "2026-11-19T20:45:08Z"
   }
  },
  "items": [
-  {
-   "store": "Epic",
-   "id": "epic:9975548b6d404a94b8a9bdb34cad49e9:2026-11-12T16:00:00Z",
-   "title": "Knightica",
-   "url": "https://store.epicgames.com/en-US/p/knightica-3be45c",
-   "img": "https://cdn1.epicgames.com/spt-assets/357100ca5613420e98208c5f14585e9d/knightica-1nuxm.png",
-   "start": "2026-11-12T16:00:00Z",
-   "end": "2026-11-19T16:00:00Z",
-   "kind": "game",
-   "base": "",
-   "seen": "2026-11-05T16:21:39Z"
-  },
   {
    "store": "Epic",
    "id": "epic:1f9a12b06b4f437790b6913ad136a08c:2026-11-19T16:00:00Z",
@@ -38,10 +26,22 @@
   },
   {
    "store": "Epic",
+   "id": "epic:f0a333114190492c84a9decd2bb43875:2026-11-26T16:00:00Z",
+   "title": "Bread and Fred",
+   "url": "https://store.epicgames.com/en-US/p/bread-and-fred-1db362",
+   "img": "https://cdn1.epicgames.com/spt-assets/545b4dd8bb364c12b719268198a93ef3/bread-and-fred-3jnwn.jpg",
+   "start": "2026-11-26T16:00:00Z",
+   "end": "2026-12-03T16:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-11-19T20:45:08Z"
+  },
+  {
+   "store": "Epic",
    "id": "epic:0623017cf9f341efbe07557f46beb4e8:2026-11-26T16:00:00Z",
    "title": "Firestone – Idle Clicker Online RPG",
    "url": "https://store.epicgames.com/en-US/p/firestone-online-idle-rpg-bfd04b",
-   "img": "https://cdn1.epicgames.com/spt-assets/69576a28f7154fe9a0dce97508da5163/firestone-online-idle-rpg-i52vr.jpg",
+   "img": "https://cdn1.epicgames.com/spt-assets/69576a28f7154fe9a0dce97508da5163/firestone-online-idle-rpg-1inmf.jpg",
    "start": "2026-11-26T16:00:00Z",
    "end": "2026-12-03T16:00:00Z",
    "kind": "game",
@@ -50,6 +50,17 @@
   }
  ],
  "history": [
+  {
+   "id": "epic:f0a333114190492c84a9decd2bb43875:2026-11-26T16:00:00Z",
+   "store": "Epic",
+   "title": "Bread and Fred",
+   "url": "https://store.epicgames.com/en-US/p/bread-and-fred-1db362",
+   "start": "2026-11-26T16:00:00Z",
+   "end": "2026-12-03T16:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-11-19T20:45:08Z"
+  },
   {
    "id": "epic:0623017cf9f341efbe07557f46beb4e8:2026-11-26T16:00:00Z",
    "store": "Epic",
