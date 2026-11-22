@@ -1,14 +1,14 @@
 {
- "checked": "2026-11-21T19:25:14Z",
- "changed": "2026-11-19T20:45:08Z",
+ "checked": "2026-11-22T06:01:26Z",
+ "changed": "2026-11-22T06:01:26Z",
  "sources": {
   "Epic": {
    "ok": true,
-   "at": "2026-11-21T19:25:14Z"
+   "at": "2026-11-22T06:01:26Z"
   },
   "Steam": {
    "ok": true,
-   "at": "2026-11-21T19:25:14Z"
+   "at": "2026-11-22T06:01:26Z"
   }
  },
  "items": [
@@ -44,7 +44,7 @@
    "img": "https://cdn1.epicgames.com/spt-assets/69576a28f7154fe9a0dce97508da5163/firestone-online-idle-rpg-1inmf.jpg",
    "start": "2026-11-26T16:00:00Z",
    "end": "2026-12-03T16:00:00Z",
-   "kind": "game",
+   "kind": "f2p_bonus",
    "base": "",
    "seen": "2026-11-18T20:39:41Z"
   }
@@ -68,7 +68,7 @@
    "url": "https://store.epicgames.com/en-US/p/firestone-online-idle-rpg-bfd04b",
    "start": "2026-11-26T16:00:00Z",
    "end": "2026-12-03T16:00:00Z",
-   "kind": "game",
+   "kind": "f2p_bonus",
    "base": "",
    "seen": "2026-11-18T20:39:41Z"
   },
