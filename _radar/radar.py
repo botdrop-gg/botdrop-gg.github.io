@@ -25,6 +25,48 @@ STEAM_CDN = "https://shared.akamai.steamstatic.com/store_item_assets/"
 REFRESH_EVERY_H = 12   # rewrite "last checked" at least this often even when nothing changed
 HISTORY_MAX = 40
 
+# Manual copy for Epic/Steam offers that are not a paid game going free.
+# Key by the Epic product slug (the /p/... part of the store URL) or by the Epic offer id.
+# {start} and {end} become the offer's UTC times. Set free_game to False to keep the
+# offer off "free games" headings, counts, recent-history, and JSON-LD.
+OVERRIDES = {
+    "firestone-online-idle-rpg-bfd04b": {
+        "badge": "In-game bonus",
+        "when": "Free-to-play game. Epic offer: in-game item bundle (advertised US$100 value), {start} – {end}. Install and log in through Epic; new players must reach stage 15.",
+        "feed_title_upcoming": "Coming to Epic: Firestone in-game bonus (free-to-play game)",
+        "feed_title": "Epic in-game bonus: Firestone (free-to-play game)",
+        "feed_summary": "Firestone – Idle Clicker Online RPG is a free-to-play game. The Epic offer is an in-game item bundle (advertised US$100 value), {start} – {end}. Install and log in through Epic; new players must reach stage 15. Check the store page before claiming.",
+        "free_game": False,
+    },
+}
+
+def override_for(i):
+    keys = []
+    m = re.search(r"/p/([^/?#]+)", i.get("url") or "")
+    if m:
+        keys.append(m.group(1))
+    iid = i.get("id") or ""
+    if iid:
+        keys.append(iid)
+        parts = iid.split(":")
+        if len(parts) >= 2 and parts[1]:
+            keys.append(parts[1])
+    for k in keys:
+        if k in OVERRIDES:
+            return OVERRIDES[k]
+    return None
+
+def is_free_game(i):
+    ov = override_for(i)
+    return not ov or ov.get("free_game", True)
+
+def fill_override(text, i, html_times=False):
+    def fmt(s):
+        if not s:
+            return "see the store page"
+        return f'<time datetime="{s}" data-t>{utc_label(s)}</time>' if html_times else utc_label(s)
+    return text.replace("{start}", fmt(i.get("start"))).replace("{end}", fmt(i.get("end")))
+
 def now_utc():
     return dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
 def iso(t):
@@ -192,7 +234,11 @@ def img_tag(i, lazy):
 def card(i, mode, lazy):
     store = i["store"]
     what = " add-on" if i["kind"] == "addon" else ""
-    if mode == "up":
+    ov = override_for(i)
+    if ov and ov.get("when"):
+        when = fill_override(ov["when"], i, html_times=True)
+        btn = f"See it on {store}"
+    elif mode == "up":
         when = f'Free from <time datetime="{i["start"]}" data-t>{utc_label(i["start"])}</time>' + \
                (f' to <time datetime="{i["end"]}" data-t>{utc_label(i["end"])}</time>' if i["end"] else "")
         btn = f"See it on {store}"
@@ -200,9 +246,12 @@ def card(i, mode, lazy):
         when = (f'Free until <time datetime="{i["end"]}" data-t>{utc_label(i["end"])}</time>' if i["end"] else "End time: see the store page")
         btn = f"Get it on {store}"
     base = f'<p class="rgb">Needs the base game: {E(i["base"])}</p>' if i.get("base") else ""
+    badges = f'<span class="st st-{store.lower()}">{store}{what}</span>'
+    if ov and ov.get("badge"):
+        badges = f'<div class="stg">{badges}<span class="st st-bonus">{E(ov["badge"])}</span></div>'
     return (f'<li class="rg" data-end="{i["end"]}" data-start="{i["start"] if mode == "up" else ""}">'
             f'<a class="rgl" href="{E(i["url"])}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{img_tag(i, lazy)}</a>'
-            f'<div class="rgc"><span class="st st-{store.lower()}">{store}{what}</span><h3>{E(i["title"])}</h3>'
+            f'<div class="rgc">{badges}<h3>{E(i["title"])}</h3>'
             f'{base}<p class="rgw">{when}</p><a class="rgbtn" href="{E(i["url"])}" target="_blank" rel="noopener">{btn}<span class="vh"> ({E(i["title"])})</span></a></div></li>')
 
 def split(d, now):
@@ -219,7 +268,7 @@ def past_games(d, now, store=None):
     live_ids = {i["id"] for i in d.get("items", [])}
     out = []
     for h in d.get("history", []):
-        if h.get("kind") == "addon":
+        if h.get("kind") == "addon" or not is_free_game(h):
             continue
         if store and h.get("store") != store:
             continue
@@ -247,8 +296,9 @@ def hist_table(rows):
 
 def render_list(d, now):
     cur, up = split(d, now)
-    epic_now = [i for i in cur if i["store"] == "Epic"]
-    epic_up = [i for i in up if i["store"] == "Epic"]
+    epic_now = [i for i in cur if i["store"] == "Epic" and is_free_game(i)]
+    epic_up = [i for i in up if i["store"] == "Epic" and is_free_game(i)]
+    epic_bonus = [i for i in cur + up if i["store"] == "Epic" and not is_free_game(i)]
     steam_now = [i for i in cur if i["store"] == "Steam" and i["kind"] == "game"]
     addons = [i for i in cur if i["store"] == "Steam" and i["kind"] != "game"]
     week_ago = now - dt.timedelta(days=7)
@@ -266,6 +316,15 @@ def render_list(d, now):
     h.append(f'<h2 id="next">Coming next on Epic <span class="cnt">{len(epic_up)}</span></h2>')
     h.append(ul(epic_up, "up") if epic_up else
              '<p class="rgnone">Epic hasn&rsquo;t announced the next free games yet. They usually appear a week ahead.</p>')
+    if epic_bonus:
+        h.append(f'<h2 id="bonuses">In-game bonuses on Epic <span class="cnt">{len(epic_bonus)}</span></h2>')
+        h.append('<p class="rgnote">These are not paid games going free. Each card explains the offer.</p>')
+        bonus_html = []
+        for i in epic_bonus:
+            s = parse(i.get("start"))
+            bonus_html.append(card(i, "up" if s and s > now else "now", n >= 2))
+            n += 1
+        h.append('<ul class="rgs">' + "".join(bonus_html) + "</ul>")
     steam_week_n = len(steam_now) + len(steam_week_past)
     h.append(f'<h2 id="steam">Free Steam games this week <span class="cnt">{steam_week_n}</span></h2>')
     h.append('<p class="rgnote">Full games that are or were 100% off to keep in the last 7 days (US store). Steam giveaways are rare and often last only a few hours, which is why we check every 3 hours. Free weekends and free-to-play titles aren&rsquo;t listed.</p>')
@@ -297,11 +356,12 @@ def render_list(d, now):
     return stat + "</p>" + "".join(h), cur, up
 
 def render_ld(d, cur):
+    games = [i for i in cur if is_free_game(i)]
     ld = {"@context": "https://schema.org", "@type": "WebPage", "@id": URL + "#page", "url": URL,
           "name": "Epic Games Free Games List: Now and Next | BotDrop", "dateModified": d.get("changed") or d.get("checked"),
           "isPartOf": {"@id": BASE + "#org"},
-          "mainEntity": {"@type": "ItemList", "name": "Epic Games free games list", "numberOfItems": len(cur),
-                         "itemListElement": [{"@type": "ListItem", "position": n + 1, "name": i["title"], "url": i["url"]} for n, i in enumerate(cur)]}}
+          "mainEntity": {"@type": "ItemList", "name": "Epic Games free games list", "numberOfItems": len(games),
+                         "itemListElement": [{"@type": "ListItem", "position": n + 1, "name": i["title"], "url": i["url"]} for n, i in enumerate(games)]}}
     return '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>"
 
 def render_feed(d):
@@ -318,9 +378,23 @@ def render_feed(d):
         until = f" until {utc_label(h['end'])}" if h["end"] else ""
         start = parse(h["start"])
         upcoming = start and start > parse(h["seen"])
-        title = f"{'Coming to' if upcoming else 'Free on'} {h['store']}: {h['title']}"
-        summ = (f"{h['title']} ({h['store']}{kind}) is free to keep" + (f" from {utc_label(h['start'])}" if upcoming else "") + f"{until}."
-                + (f" Needs the base game: {h['base']}." if h.get("base") else "") + " Check the store page before claiming.")
+        ov = override_for(h)
+        if ov and (ov.get("feed_title") or ov.get("feed_title_upcoming") or ov.get("feed_summary")):
+            if upcoming and ov.get("feed_title_upcoming"):
+                title = ov["feed_title_upcoming"]
+            elif ov.get("feed_title"):
+                title = ov["feed_title"]
+            else:
+                title = f"{'Coming to' if upcoming else 'On'} {h['store']}: {h['title']}"
+            if ov.get("feed_summary"):
+                summ = fill_override(ov["feed_summary"], h)
+            else:
+                summ = (f"{h['title']} ({h['store']}{kind})" + (f" from {utc_label(h['start'])}" if upcoming else "") + f"{until}."
+                        + " Check the store page before claiming.")
+        else:
+            title = f"{'Coming to' if upcoming else 'Free on'} {h['store']}: {h['title']}"
+            summ = (f"{h['title']} ({h['store']}{kind}) is free to keep" + (f" from {utc_label(h['start'])}" if upcoming else "") + f"{until}."
+                    + (f" Needs the base game: {h['base']}." if h.get("base") else "") + " Check the store page before claiming.")
         out += ["<entry>", f"<title>{esc(title)}</title>", f'<link rel="alternate" type="text/html" href="{esc(h["url"])}"/>',
                 f"<id>tag:getbotdrop.com,2026:free-games/{esc(h['id'])}</id>", f"<updated>{h['seen']}</updated>",
                 f"<published>{h['seen']}</published>", f"<summary>{esc(summ)}</summary>", "</entry>"]
