@@ -1,29 +1,17 @@
 {
- "checked": "2026-11-25T19:23:26Z",
- "changed": "2026-11-22T06:01:26Z",
+ "checked": "2026-11-26T17:02:09Z",
+ "changed": "2026-11-26T17:02:09Z",
  "sources": {
   "Epic": {
    "ok": true,
-   "at": "2026-11-25T19:23:26Z"
+   "at": "2026-11-26T17:02:09Z"
   },
   "Steam": {
    "ok": true,
-   "at": "2026-11-25T19:23:26Z"
+   "at": "2026-11-26T17:02:09Z"
   }
  },
  "items": [
-  {
-   "store": "Epic",
-   "id": "epic:1f9a12b06b4f437790b6913ad136a08c:2026-11-19T16:00:00Z",
-   "title": "Mark of the Deep",
-   "url": "https://store.epicgames.com/en-US/p/mark-of-the-deep-f7dc08",
-   "img": "https://cdn1.epicgames.com/spt-assets/83a240506a884c10ad8fb99694e57a0d/mark-of-the-deep-w1ygr.png",
-   "start": "2026-11-19T16:00:00Z",
-   "end": "2026-11-26T16:00:00Z",
-   "kind": "game",
-   "base": "",
-   "seen": "2026-11-12T16:21:18Z"
-  },
   {
    "store": "Epic",
    "id": "epic:f0a333114190492c84a9decd2bb43875:2026-11-26T16:00:00Z",
@@ -47,9 +35,32 @@
    "kind": "f2p_bonus",
    "base": "",
    "seen": "2026-11-18T20:39:41Z"
+  },
+  {
+   "store": "Epic",
+   "id": "epic:72bd05148adb4e2cacb8b2efaa4c0297:2026-12-03T16:00:00Z",
+   "title": "Strange Antiquities",
+   "url": "https://store.epicgames.com/en-US/p/strange-antiquities-e37660",
+   "img": "https://cdn1.epicgames.com/spt-assets/d0e3b7c3690c485ca7a435d298262ab2/strange-antiquities-1kl5s.png",
+   "start": "2026-12-03T16:00:00Z",
+   "end": "2026-12-10T16:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-11-26T17:02:09Z"
   }
  ],
  "history": [
+  {
+   "id": "epic:72bd05148adb4e2cacb8b2efaa4c0297:2026-12-03T16:00:00Z",
+   "store": "Epic",
+   "title": "Strange Antiquities",
+   "url": "https://store.epicgames.com/en-US/p/strange-antiquities-e37660",
+   "start": "2026-12-03T16:00:00Z",
+   "end": "2026-12-10T16:00:00Z",
+   "kind": "game",
+   "base": "",
+   "seen": "2026-11-26T17:02:09Z"
+  },
   {
    "id": "epic:f0a333114190492c84a9decd2bb43875:2026-11-26T16:00:00Z",
    "store": "Epic",
